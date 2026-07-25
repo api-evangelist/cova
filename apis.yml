@@ -1,7 +1,30 @@
 aid: cova
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cova.png
 name: Cova
-description: Cova is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Cova is an AI-native home care agency licensed in Michigan and backed by Y
+  Combinator (Summer 2026). The company serves Medicaid, long-term care
+  insurance (LTCI), and private-pay patients, pays caregivers the highest base
+  rate in the state, and helps unpaid family caregivers get paid through
+  programs they may not know they qualify for. Cova operates a home care
+  platform that connects caregivers with families needing in-home assistance,
+  using an AI-driven operational model to reduce traditional agency overhead
+  while maximizing caregiver compensation. Founded in 2026 by Jordan Ibe and
+  Ansh Tandon, the team is based in Detroit, Michigan. Cova also runs
+  MichiganHomeHelp.com as a Medicaid Home Help information resource. As a
+  consumer home-care service, Cova does not currently publish a public API,
+  developer portal, or developer documentation.
 url: https://raw.githubusercontent.com/api-evangelist/cova/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,35 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Home Care
+- Healthcare
+- Caregiving
+- Medicaid
+- Long-Term Care
+- AI
+- Marketplace
+- Detroit
+- Michigan
 apis: []
+common:
+- type: DomainSecurity
+  url: security/cova-domain-security.yml
+- type: Website
+  url: https://cova.care/
+- type: Support
+  url: mailto:questions@cova.care
+- type: Company
+  url: https://www.ycombinator.com/companies/cova
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
